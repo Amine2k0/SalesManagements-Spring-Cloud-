@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: MicroService3
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
