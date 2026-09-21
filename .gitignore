@@ -1,0 +1,22 @@
+# Build output
+target/
+HELP.md
+
+# IDE / editor
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.vscode/
+
+# Logs and local env
+*.log
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

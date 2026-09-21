@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Aggregator only: it builds the five services in one command and owns no
+  dependencies itself. Each service keeps spring-boot-starter-parent as its
+  parent, so they can still be built and run on their own.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>salesback</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>salesback</name>
+    <description>Sales management microservices</description>
+
+    <modules>
+        <module>MicroServiceAuth</module>
+        <module>MicroService1</module>
+        <module>MicroService2</module>
+        <module>MicroService3</module>
+        <module>api-gateway</module>
+    </modules>
+</project>

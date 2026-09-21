@@ -1,0 +1,30 @@
+# The two pieces of infrastructure the services expect: a Consul agent for
+# discovery and a MySQL instance for the shared schema.
+services:
+  consul:
+    image: hashicorp/consul:1.19
+    container_name: sales-consul
+    restart: unless-stopped
+    ports:
+      - "8500:8500"
+    command: agent -dev -client=0.0.0.0 -ui
+
+  mysql:
+    image: mysql:8.0
+    container_name: sales-mysql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: "springbootDB"
+    volumes:
+      - sales-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  sales-mysql-data:
