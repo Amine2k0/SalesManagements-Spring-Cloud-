@@ -1,7 +1,8 @@
 # Sales Management — Spring Cloud microservices
 
 A sales management backend split into four Spring Boot services behind a Spring Cloud Gateway,
-with Consul for service discovery and JWT authentication.
+with Consul for service discovery and JWT authentication, and a React frontend
+([`salesfront/`](salesfront/README.md)).
 
 ```
                            ┌──────────────┐
@@ -70,6 +71,16 @@ mvn -pl MicroService1 test # or just one
 ```
 
 Each service also keeps its own Maven wrapper and can be built on its own.
+
+### 3. The frontend
+
+```bash
+cd salesfront && npm install && npm run dev   # http://localhost:4200
+```
+
+Vite + React + TypeScript + Tailwind. The dev server proxies `/api` to the gateway on `:8989`.
+Sign in or create an account, then add products and customers and record sales. See
+[`salesfront/README.md`](salesfront/README.md).
 
 ## Authentication
 
@@ -192,5 +203,6 @@ These are deliberate and worth knowing about before building on this:
    as a raw 500 rather than a 400 with a useful message.
 6. **`Produit.prix` is a `float`.** Money belongs in `BigDecimal`; binary floating point cannot
    represent decimal cents exactly.
-7. **No Angular client.** One existed as a git submodule and was removed; the broken submodule
-   reference has been cleaned out of the repository.
+7. **Recording a sale does not decrement stock,** and a sale stores no price of its own, so
+   totals are computed at each product's current list price. The frontend labels this rather
+   than hiding it.

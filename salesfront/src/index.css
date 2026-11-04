@@ -1,0 +1,220 @@
+@import '@fontsource-variable/archivo/wdth.css';
+@import 'tailwindcss';
+
+/*
+ * Carnet's palette comes from a duplicate receipt book: white original sheets, carbon-blue
+ * ink, the red of the numbering machine, and the canary and pink of the copy sheets.
+ */
+@theme {
+  --font-sans: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ground: #f3f4f7;
+  --color-sheet: #ffffff;
+  --color-ink: #161b2e;
+  --color-ink-2: #474e6b;
+  --color-ink-3: #656c8a;
+  --color-rule: #dfe2ea;
+  --color-rule-strong: #bcc1d2;
+
+  --color-carbon-950: #0e1a40;
+  --color-carbon-900: #172b66;
+  --color-carbon-800: #1d3579;
+  --color-carbon-700: #24418f;
+  --color-carbon-600: #2f52ae;
+  --color-carbon-300: #9db0e3;
+  --color-carbon-200: #c5d1f0;
+  --color-carbon-100: #e4e9f7;
+  --color-carbon-50: #f2f4fb;
+
+  --color-numero: #c0392b;
+  --color-numero-deep: #9a2a1f;
+  --color-numero-tint: #fbeae7;
+
+  --color-canary: #f6e27f;
+  --color-canary-tint: #fcf5d2;
+  --color-canary-ink: #574500;
+
+  --color-pink: #f2b8c6;
+  --color-pink-tint: #fce8ee;
+  --color-pink-ink: #7a2440;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-ground font-sans text-ink;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    caret-color: var(--color-carbon-700);
+  }
+
+  ::selection {
+    background: var(--color-canary);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-carbon-600);
+    outline-offset: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-rule-strong) transparent;
+  }
+}
+
+@layer components {
+  /* Printed field label, as on a pre-printed invoice form. */
+  .form-label {
+    font-stretch: 87.5%;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-3);
+  }
+
+  /* The red serial number a numbering machine prints on every slip. */
+  .numero {
+    font-stretch: 87.5%;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-numero);
+    letter-spacing: 0.02em;
+  }
+
+  .figures {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Perforation between a slip and its stub. */
+  .perforation-x {
+    background-image: radial-gradient(circle, var(--color-rule-strong) 1.1px, transparent 1.4px);
+    background-size: 7px 3px;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 3px;
+  }
+  .perforation-y {
+    background-image: radial-gradient(circle, var(--color-rule-strong) 1.1px, transparent 1.4px);
+    background-size: 3px 7px;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 3px;
+  }
+}
+
+/* The one authored motion: the RECORDED stamp landing on a slip. */
+@keyframes stamp-land {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-16deg) scale(1.7);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-9deg) scale(1);
+  }
+}
+
+@keyframes numero-print {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* A freshly filed stub glows canary, then settles into the register. */
+@keyframes filed {
+  from {
+    background-color: var(--color-canary-tint);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stamp {
+  animation: stamp-land 340ms var(--ease-out-expo) both;
+}
+.animate-numero {
+  animation: numero-print 420ms var(--ease-out-expo) 120ms both;
+}
+.animate-filed {
+  animation: filed 2200ms ease-out both;
+}
+.animate-fade {
+  animation: fade-in 160ms ease-out both;
+}
+.animate-panel {
+  animation: panel-in 220ms var(--ease-out-expo) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-stamp {
+    animation: fade-in 1ms both;
+    transform: translate(-50%, -50%) rotate(-9deg);
+  }
+  .animate-numero,
+  .animate-fade,
+  .animate-panel {
+    animation: none;
+  }
+  .animate-filed {
+    animation-duration: 1ms;
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T13:15:21.814460+00:00",
+  "title": "Design System: Carnet",
+  "extensions": {
+    "colorMeta": {
+      "carbon-ink": {
+        "role": "primary",
+        "displayName": "Carbon Ink",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-ink-deep": {
+        "role": "primary",
+        "displayName": "Carbon Ink Deep",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-cover": {
+        "role": "primary",
+        "displayName": "Carbon Cover",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-night": {
+        "role": "primary",
+        "displayName": "Carbon Night",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-bright": {
+        "role": "primary",
+        "displayName": "Carbon Bright",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-haze": {
+        "role": "primary",
+        "displayName": "Carbon Haze",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-mist": {
+        "role": "primary",
+        "displayName": "Carbon Mist",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-wash": {
+        "role": "primary",
+        "displayName": "Carbon Wash",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "carbon-whisper": {
+        "role": "primary",
+        "displayName": "Carbon Whisper",
+        "tonalRamp": [
+          "#0e1a40",
+          "#172b66",
+          "#1d3579",
+          "#24418f",
+          "#2f52ae",
+          "#9db0e3",
+          "#c5d1f0",
+          "#e4e9f7"
+        ]
+      },
+      "numero-red": {
+        "role": "secondary",
+        "displayName": "Numbering-Machine Red",
+        "tonalRamp": [
+          "#4d150f",
+          "#7a2118",
+          "#9a2a1f",
+          "#c0392b",
+          "#d4685c",
+          "#e69a91",
+          "#f3c9c3",
+          "#fbeae7"
+        ]
+      },
+      "numero-red-deep": {
+        "role": "secondary",
+        "displayName": "Numbering Red Deep",
+        "tonalRamp": [
+          "#4d150f",
+          "#7a2118",
+          "#9a2a1f",
+          "#c0392b",
+          "#d4685c",
+          "#e69a91",
+          "#f3c9c3",
+          "#fbeae7"
+        ]
+      },
+      "numero-tint": {
+        "role": "secondary",
+        "displayName": "Numbering Red Tint",
+        "tonalRamp": [
+          "#4d150f",
+          "#7a2118",
+          "#9a2a1f",
+          "#c0392b",
+          "#d4685c",
+          "#e69a91",
+          "#f3c9c3",
+          "#fbeae7"
+        ]
+      },
+      "canary-copy": {
+        "role": "tertiary",
+        "displayName": "Canary Copy",
+        "tonalRamp": [
+          "#3a2e00",
+          "#574500",
+          "#8a7212",
+          "#c9aa2c",
+          "#f6e27f",
+          "#f8e99d",
+          "#faefbc",
+          "#fcf5d2"
+        ]
+      },
+      "canary-tint": {
+        "role": "tertiary",
+        "displayName": "Canary Tint",
+        "tonalRamp": [
+          "#3a2e00",
+          "#574500",
+          "#8a7212",
+          "#c9aa2c",
+          "#f6e27f",
+          "#f8e99d",
+          "#faefbc",
+          "#fcf5d2"
+        ]
+      },
+      "canary-ink": {
+        "role": "tertiary",
+        "displayName": "Canary Ink",
+        "tonalRamp": [
+          "#3a2e00",
+          "#574500",
+          "#8a7212",
+          "#c9aa2c",
+          "#f6e27f",
+          "#f8e99d",
+          "#faefbc",
+          "#fcf5d2"
+        ]
+      },
+      "pink-copy": {
+        "role": "tertiary",
+        "displayName": "Pink Copy",
+        "tonalRamp": [
+          "#4a1527",
+          "#7a2440",
+          "#a8445f",
+          "#d0798f",
+          "#f2b8c6",
+          "#f6cad5",
+          "#f9dae2",
+          "#fce8ee"
+        ]
+      },
+      "pink-tint": {
+        "role": "tertiary",
+        "displayName": "Pink Tint",
+        "tonalRamp": [
+          "#4a1527",
+          "#7a2440",
+          "#a8445f",
+          "#d0798f",
+          "#f2b8c6",
+          "#f6cad5",
+          "#f9dae2",
+          "#fce8ee"
+        ]
+      },
+      "pink-ink": {
+        "role": "tertiary",
+        "displayName": "Pink Ink",
+        "tonalRamp": [
+          "#4a1527",
+          "#7a2440",
+          "#a8445f",
+          "#d0798f",
+          "#f2b8c6",
+          "#f6cad5",
+          "#f9dae2",
+          "#fce8ee"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Cool Ground",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Original Sheet",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Ink",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Tertiary Ink",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "tonalRamp": [
+          "#161b2e",
+          "#2e3450",
+          "#474e6b",
+          "#656c8a",
+          "#8d93ab",
+          "#bcc1d2",
+          "#dfe2ea",
+          "#f3f4f7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The takings figure on the Overview totals line."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles and the sign-in heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sheet headers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Table cells, form values, prose."
+      },
+      "label": {
+        "displayName": "Printed Label",
+        "purpose": "Field labels, table headers, totals labels."
+      },
+      "numero": {
+        "displayName": "Numero",
+        "purpose": "Red sales slip serials."
+      }
+    },
+    "shadows": [
+      {
+        "name": "drawer",
+        "value": "8px 0 32px -8px rgb(14 26 64 / 0.45)",
+        "purpose": "Mobile navigation drawer only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Stamp landing, panel entrance, chart column growth."
+      },
+      {
+        "name": "stamp-land",
+        "value": "340ms ease-out-expo",
+        "purpose": "The RECORDED stamp; reduced motion swaps it for an instant appearance."
+      },
+      {
+        "name": "filed",
+        "value": "2200ms ease-out",
+        "purpose": "Canary glow fading from a just-filed row."
+      },
+      {
+        "name": "state",
+        "value": "150ms",
+        "purpose": "Hover and colour transitions on controls."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action on a page or form: Record sale, Add product, Save changes.",
+      "html": "<button class=\"ds-btn-primary\">Record sale</button>",
+      "css": ".ds-btn-primary{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;height:40px;padding:0 16px;border:0;border-radius:6px;background:#24418f;color:#fff;font-weight:600;font-size:14px;cursor:pointer;transition:background-color .15s}.ds-btn-primary:hover{background:#1d3579}.ds-btn-primary:active{background:#172b66}.ds-btn-primary:focus-visible{outline:2px solid #2f52ae;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Cancel, Edit, Start a new slip.",
+      "html": "<button class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;height:40px;padding:0 16px;border:0;border-radius:6px;background:#fff;color:#161b2e;box-shadow:inset 0 0 0 1px #bcc1d2;font-weight:600;font-size:14px;cursor:pointer;transition:background-color .15s,box-shadow .15s}.ds-btn-secondary:hover{background:#f2f4fb;box-shadow:inset 0 0 0 1px #9db0e3}.ds-btn-secondary:focus-visible{outline:2px solid #2f52ae;outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled input with a printed caps label.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Brand</span><input class=\"ds-input\" placeholder=\"e.g. Dell\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:6px;font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif}.ds-label{font-stretch:87.5%;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#656c8a}.ds-input{font-family:inherit;height:40px;padding:0 12px;border:0;border-radius:6px;background:#fff;color:#161b2e;font-size:15px;box-shadow:inset 0 0 0 1px #bcc1d2;transition:box-shadow .15s}.ds-input:hover{box-shadow:inset 0 0 0 1px #9db0e3}.ds-input:focus{outline:none;box-shadow:inset 0 0 0 2px #2f52ae}"
+    },
+    {
+      "name": "Navigation Rail",
+      "kind": "nav",
+      "refersTo": "nav-rail",
+      "description": "Carbon cover rail; the active item is an index tab that runs into the page ground.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-item ds-active\">Overview</a><a class=\"ds-rail-item\">Sales</a><a class=\"ds-rail-item\">Products</a></nav>",
+      "css": ".ds-rail{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;width:240px;background:#172b66;padding:16px 0 16px 12px;display:flex;flex-direction:column;gap:4px}.ds-rail-item{display:flex;align-items:center;height:40px;padding:0 20px 0 12px;border-radius:6px 0 0 6px;color:#c5d1f0;font-weight:600;font-size:15px;cursor:pointer;transition:background-color .15s,color .15s}.ds-rail-item:hover{background:rgba(255,255,255,.08);color:#fff}.ds-rail-item.ds-active{background:#f3f4f7;color:#172b66}"
+    },
+    {
+      "name": "Stock Badges",
+      "kind": "chip",
+      "refersTo": "badge-low-stock",
+      "description": "Low stock in pink copy, out of stock in red tint.",
+      "html": "<span class=\"ds-badge ds-low\">Low · 4 left</span> <span class=\"ds-badge ds-out\">Out of stock</span>",
+      "css": ".ds-badge{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:4px;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}.ds-low{background:#fce8ee;color:#7a2440}.ds-out{background:#fbeae7;color:#9a2a1f}"
+    },
+    {
+      "name": "Slip Stub",
+      "kind": "custom",
+      "refersTo": "sales-slip",
+      "description": "A sales register entry: red serial and date, a perforation, the customer and the amount.",
+      "html": "<div class=\"ds-stub\"><span class=\"ds-stub-no\"><b>N° 0006</b><small>4 Nov 2026</small></span><span class=\"ds-perf\"></span><span class=\"ds-stub-who\"><b>Sara Alaoui</b><small>MX Master 3S mouse × 1</small></span><span class=\"ds-stub-amt\">949.00 DH</span></div>",
+      "css": ".ds-stub{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;display:grid;grid-template-columns:4.75rem 3px 1fr auto;align-items:center;gap:0 12px;padding:12px 20px;background:#fff;border-top:1px solid #dfe2ea;font-variant-numeric:tabular-nums}.ds-stub small{display:block;font-size:12px;color:#656c8a}.ds-stub-no b{display:block;color:#c0392b;font-stretch:87.5%;font-weight:700;font-size:14px}.ds-perf{align-self:stretch;background-image:radial-gradient(circle,#bcc1d2 1.1px,transparent 1.4px);background-size:3px 7px;background-repeat:repeat-y}.ds-stub-who b{display:block;font-size:14px;color:#161b2e}.ds-stub-amt{font-weight:600;font-size:14px;color:#172b66}"
+    },
+    {
+      "name": "Recorded Stamp",
+      "kind": "custom",
+      "refersTo": "sales-slip",
+      "description": "Lands once on a slip when a sale is recorded.",
+      "html": "<div class=\"ds-stamp-wrap\"><div class=\"ds-stamp\"><b>RECORDED</b><small>4 NOV 2026</small></div></div>",
+      "css": ".ds-stamp-wrap{font-family:'Archivo Variable', ui-sans-serif, system-ui, sans-serif;background:#fcf5d2;padding:28px;display:flex;justify-content:center}.ds-stamp{transform:rotate(-9deg);border:3px solid rgba(36,65,143,.8);border-radius:4px;padding:6px 16px;color:rgba(36,65,143,.9);mix-blend-mode:multiply;text-align:center;animation:ds-land .34s cubic-bezier(.16,1,.3,1) both}.ds-stamp b{display:block;font-size:26px;line-height:1;font-weight:800;letter-spacing:.14em;font-stretch:80%}.ds-stamp small{display:block;margin-top:4px;padding-top:4px;border-top:2px solid rgba(36,65,143,.7);font-size:12px;font-weight:700;letter-spacing:.18em}@keyframes ds-land{from{opacity:0;transform:rotate(-16deg) scale(1.7)}to{opacity:1;transform:rotate(-9deg) scale(1)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Duplicate Book",
+    "overview": "Carnet is drawn from the carnet à souches, the numbered carbon-copy receipt book kept at shop counters across Morocco. The world appears only through the book's own materials: carbon-blue ink and a carbon-blue cover, white original sheets, the canary and pink of the copy sheets beneath, the red serial a numbering machine prints on every slip, perforated stubs, and the rubber stamp that marks a sale as done. The page structure is an ordinary, legible working app: a navigation rail, sheets of data, standard controls. The world never supplies the layout. It supplies type, palette, density and one signature moment.",
+    "keyCharacteristics": [
+      "Carbon-blue cover rail and carbon-ink values on white sheets over a cool grey ground.",
+      "Red numbering-machine serials (N° 0006) on every sales slip, never on anything else.",
+      "Canary copy for the slip being written and for selection; pink copy for low stock.",
+      "Flat sheets with hairline rules. Perforated rules mark the stub. Totals get an accountant's double rule.",
+      "One typeface (Archivo) across its width axis: semi-condensed caps for labels, normal width for reading."
+    ],
+    "rules": [
+      {
+        "name": "The Numbering Machine Rule",
+        "body": "Red serials belong to sales slips. Product and customer references stay in tertiary ink, so red always means a slip number or something gone wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Copy Sheet Rule",
+        "body": "Canary means \"being written or just written\"; pink means \"running low\". Neither is decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every number that can sit in a column (amounts, quantities, dates, counts) uses tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Printed Label Rule",
+        "body": "Labels are printed by the form, so they are small semi-condensed caps. Headings are never uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "No card shadows and no gradients. A surface is separated by a hairline or a colour field, never by a blur.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every amount in tabular figures with the DH suffix (7,999.00 DH).",
+      "Do keep red for slip serials, destructive actions and errors.",
+      "Do use canary for the record being written or just written, and pink only for low stock.",
+      "Do separate content with hairline rules (#dfe2ea) on white sheets over the cool ground (#f3f4f7).",
+      "Do label fields and columns with the semi-condensed caps label style.",
+      "Do keep the stamp as the only authored motion; everything else is instant or a 150ms fade."
+    ],
+    "donts": [
+      "Don't add card shadows, gradients or glass; depth is flat.",
+      "Don't build rows of identical stat tiles (caps label over a big number). Totals are a ruled totals line, with the final figure double-ruled.",
+      "Don't use a cream or warm paper ground; the ground is cool.",
+      "Don't let the receipt-book world supply the layout or controls: no ruled-paper tables, no fake handwriting. Tables, buttons and inputs stay standard.",
+      "Don't show a number the API didn't provide."
+    ]
+  }
+}
