@@ -41,10 +41,16 @@ public class ClientController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Client> updateClient(@PathVariable Long id, @RequestBody Client client) {
-        if (clientService.getClientById(id) == null) {
+        Client existing = clientService.getClientById(id);
+        if (existing == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         client.setId(id);
+        // The password is write-only, so a client editing the other fields never has it to
+        // send back. Keep the stored one unless a new one is supplied.
+        if (client.getPassword() == null || client.getPassword().isBlank()) {
+            client.setPassword(existing.getPassword());
+        }
         return ResponseEntity.ok(clientService.saveClient(client));
     }
 
